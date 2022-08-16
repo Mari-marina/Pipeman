@@ -1,2 +1,45 @@
 @import "./../vars/vars";
-// color: $accentColor;
+
+.nav {
+  background: #1b1b1c;
+  display: flex;
+  &__list {
+    color: $accentColor;
+    font-weight: 700px;
+    font-size: 16px;
+  }
+  &__button {
+    width: 174px;
+    height: 40px;
+    background: transparent;
+    color: $accentColor;
+    border: solid 2px $accentColor;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    &:hover {
+      background: $accentColor;
+      color: #ffffff;
+    }
+}
+&__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+&__item:first-child,
+&__item:nth-child(2),
+&__item:nth-child(3) {
+  &:hover {
+    border-bottom: solid .5px $accentColor;
+  }
+}
+&__phone {
+  color: $accentColor;
+  text-decoration: none;
+}
+}

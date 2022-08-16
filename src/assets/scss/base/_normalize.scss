@@ -379,21 +379,21 @@ body {
   /* border: 1px solid red; */
 }
 
-// .container {
-//   max-width: 1284px;
-//   width: 100%;
-//   margin: 0 auto;
-//   padding: 0 20px;
-//   @media all and (max-width: 800px) {
-//     padding: 0 10px;
-//   }
-// }
-
-
-
-a {
-  text-decoration: none;
+.container {
+  max-width: 1284px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media all and (max-width: 800px) {
+    padding: 0 10px;
+  }
 }
+
+
+
+// a {
+//   text-decoration: none;
+// }
 
 button:hover {
   opacity: 0.9;
@@ -419,4 +419,7 @@ label {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
 }

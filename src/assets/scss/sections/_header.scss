@@ -1,1 +1,57 @@
 @import "./../vars/vars";
+
+.header {
+  &__wrap {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 960px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+&__content {
+  padding: 30px;
+  margin: 100px 0;
+}
+&__title {
+  color: $accentColor;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 300px;
+}
+&__subtitle {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+&__button {
+  width: 146px;
+  height: 46px;
+  border: none;
+  background: $accentColor;
+  color: #1b1b1c;
+  font-family: "Nunito Sans";
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+&__text,
+&__text__link {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 16px;
+  opacity: .9;
+}
+&__input {
+  background: transparent;
+  appearance: none;
+  border-bottom: solid 1px #ffffff;
+}
+}
