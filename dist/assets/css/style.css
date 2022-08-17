@@ -370,8 +370,17 @@ body {
   /* border: 1px solid red; */
 }
 
-a {
-    text-decoration: none;
+.container {
+    max-width: 1284px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        padding: 0 10px;
+    }
 }
 
 button:hover {
@@ -388,4 +397,119 @@ label {
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.header__wrap {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 960px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.header__content {
+    padding: 30px;
+    margin: 100px 0;
+}
+
+.header__title {
+    color: #ffbd03;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 300px;
+}
+
+.header__subtitle {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header__button {
+    width: 146px;
+    height: 46px;
+    border: none;
+    background: #ffbd03;
+    color: #1b1b1c;
+    font-family: "Nunito Sans";
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.header__text, .header__text__link {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: .9;
+}
+
+.header__input {
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-bottom: solid 1px #ffffff;
+}
+
+.nav {
+    background: #1b1b1c;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav__list {
+    color: #ffbd03;
+    font-weight: 700px;
+    font-size: 16px;
+}
+
+.nav__button {
+    width: 174px;
+    height: 40px;
+    background: transparent;
+    color: #ffbd03;
+    border: solid 2px #ffbd03;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.nav__button:hover {
+    background: #ffbd03;
+    color: #ffffff;
+}
+
+.nav__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.nav__item:first-child:hover, .nav__item:nth-child(2):hover, .nav__item:nth-child(3):hover {
+    border-bottom: solid 0.5px #ffbd03;
+}
+
+.nav__phone {
+    color: #ffbd03;
+    text-decoration: none;
 }
