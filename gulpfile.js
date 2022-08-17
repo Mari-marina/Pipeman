@@ -30,7 +30,8 @@ const path = {
         js:     srcPath + "assets/js/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+        video: srcPath + "assets/video/**/*",
     },
     // В эти папки будут собираться файлы 
     build: {
@@ -38,7 +39,8 @@ const path = {
         js:     distPath + "assets/js/",
         css:    distPath + "assets/css/",
         images: distPath + "assets/images/",
-        fonts:  distPath + "assets/fonts/"
+        fonts:  distPath + "assets/fonts/",
+        video: distPath + "assets/video/",
     },
     // За этими файлами мы будем следить. При изменении этих файлов бдет перезагружаться браузер
     watch: {
@@ -46,7 +48,8 @@ const path = {
         js:     srcPath + "assets/js/**/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+        video: srcPath + "assets/video/**/*",
     },
     clean: "./" + distPath
 }
@@ -226,6 +229,15 @@ function fonts(cb) {
     cb();
 }
 
+// Video
+function video(cb) {
+    return src(path.src.video)
+      .pipe(dest(path.build.video))
+      .pipe(browserSync.reload({ stream: true }));
+  
+    cb();
+  }
+
 // При сборке проекта удаляет папку dist и создает новую со свежими файлами 
 function clean(cb) {
     return del(path.clean);
@@ -239,10 +251,11 @@ function watchFiles() {
     gulp.watch([path.watch.js], jsWatch);
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
+    gulp.watch([path.watch.video], video);
 }
 
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts, video)); // Будет запускаться по команде gulp build
 const watch = gulp.parallel(build, watchFiles, serve); // Будет запускаться по дефолтной команде gulp 
 
 
@@ -250,6 +263,7 @@ const watch = gulp.parallel(build, watchFiles, serve); // Будет запус�
 exports.html = html;
 exports.css = css;
 exports.js = js;
+exports.fonts = video;
 exports.images = images;
 exports.fonts = fonts;
 exports.clean = clean;
@@ -264,3 +278,17 @@ exports.default = watch;
 // 1. B папку с новым проектом переносим файлы gulpfile.js, package.json и папку src;
 // 2. B консоли пишем npm install (установятся все нужные модули);
 // 3. Соблюдаем файловую структуру или в сборках подправляем пути "откуда берем"/"куда кладем" файлы.
+
+// var ghPages = require("gulp-gh-pages");
+
+// gulp.task("deploy", function () {
+//   return gulp.src("./dist/**/*").pipe(ghPages());
+// });
+
+// const gulp = require('gulp');
+// const ghPages = require('gulp-gh-pages');
+
+// gulp.task('deploy', function() {
+//     return gulp.src('./dist/**/*')
+//         .pipe(ghPages());
+// });

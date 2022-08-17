@@ -2,6 +2,8 @@
 
 .header {
   &__wrap {
+    top: 220px;
+    position: absolute;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.7);
     max-width: 960px;
@@ -12,9 +14,19 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+&__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 &__content {
   padding: 30px;
   margin: 100px 0;
+}
+&__video {
+  min-width: 100%;
+  margin: 0 auto;
+  
 }
 &__title {
   color: $accentColor;

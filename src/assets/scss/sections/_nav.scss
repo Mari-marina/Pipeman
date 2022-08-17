@@ -30,6 +30,9 @@
   align-items: center;
   justify-content: space-between;
   margin: 30px 0;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: 20px;
 }
 &__item:first-child,
 &__item:nth-child(2),
@@ -41,5 +44,14 @@
 &__phone {
   color: $accentColor;
   text-decoration: none;
+}
+&__logo {
+  max-width: 150px;
+  width: 100%;
+}
+&__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 }

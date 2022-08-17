@@ -1,0 +1,15 @@
+@import "./../vars/vars";
+
+.storage {
+  background-image: url(./../images/storage.png);
+  &__title {
+    padding: 150px 0 500px;
+    color: $accentColor;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-left: 30px;
+    max-width: 736px;
+    width: 100%;
+  }
+}
