@@ -519,6 +519,24 @@ body {
     -ms-border-radius: 4px;
     -o-border-radius: 4px; }
 
+.orders__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-right: 20px; }
+
+.orders__title_bold {
+  font-weight: 700; }
+
+.orders__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.orders__img {
+  max-width: 678px;
+  width: 100%; }
+
 /* Slider */
 .slick-slider {
   position: relative;

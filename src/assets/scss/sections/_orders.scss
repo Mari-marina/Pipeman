@@ -1,0 +1,21 @@
+@import "./../vars/vars"; 
+.orders {
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-right: 20px;
+  }
+  &__title_bold {
+    font-weight: 700;
+  }
+  &__wrap {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    max-width: 678px; 
+    width: 100%;
+  }
+}
