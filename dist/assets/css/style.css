@@ -567,6 +567,21 @@ body {
     width: 100%;
 }
 
+.storage {
+    background-image: url(./../images/storage.png);
+}
+
+.storage__title {
+    padding: 150px 0 500px;
+    color: #ffbd03;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-left: 30px;
+    max-width: 736px;
+    width: 100%;
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
