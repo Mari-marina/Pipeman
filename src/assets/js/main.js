@@ -1,5 +1,6 @@
-$('.certificates__slider').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
+// $('.certificates__slider').slick({
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3
+// });
+
