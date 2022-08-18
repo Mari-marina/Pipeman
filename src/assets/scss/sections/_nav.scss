@@ -7,6 +7,12 @@
     color: $accentColor;
     font-weight: 700px;
     font-size: 16px;
+    @media all and (max-width: 1030px) {
+      font-size: 24px;
+    }
+    @media all and (max-width: 550px) {
+      font-size: 16px;
+    }
   }
   &__button {
     width: 174px;
@@ -25,6 +31,7 @@
       color: #ffffff;
     }
 }
+
 &__list {
   display: flex;
   align-items: center;
@@ -33,6 +40,14 @@
   max-width: 1000px;
   width: 100%;
   margin-left: 20px;
+  @media all and (max-width: 1030px) {
+    flex-direction: column;
+  }
+}
+&__item {
+  @media all and (max-width: 1030px) {
+    margin-top: 30px;
+  }
 }
 &__item:first-child,
 &__item:nth-child(2),
@@ -53,5 +68,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media all and (max-width: 1030px) {
+    flex-direction: column;
+    padding-top: 50px;
+  }
 }
 }
