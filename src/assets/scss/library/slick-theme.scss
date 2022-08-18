@@ -91,7 +91,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         font-family: $slick-font-family;
-        font-size: 20px;
+        font-size: 70px;
         line-height: 1;
         color: $slick-arrow-color;
         opacity: $slick-opacity-default;
@@ -101,10 +101,12 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    z-index: 3;
+    left: 22px;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: 22px;
+        z-index: 3;
     }
     &:before {
         content: $slick-prev-character;
@@ -115,10 +117,11 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 64px;
     [dir="rtl"] & {
-        left: -25px;
+        left: 64px;
         right: auto;
+        z-index: 2;
     }
     &:before {
         content: $slick-next-character;

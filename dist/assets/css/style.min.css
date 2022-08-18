@@ -579,8 +579,12 @@ label {
   font-weight: 700; }
 
 .certificates__img {
-  max-width: 400px;
-  width: 100%; }
+  width: 100%;
+  height: 400px; }
+
+.certificates__slider {
+  height: 100%;
+  width: auto; }
 
 .storage {
   background-image: url(./../images/storage.png); }
@@ -762,7 +766,7 @@ label {
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
-    font-size: 20px;
+    font-size: 70px;
     line-height: 1;
     color: white;
     opacity: 0.75;
@@ -770,20 +774,23 @@ label {
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -25px; }
+  z-index: 3;
+  left: 22px; }
   [dir="rtl"] .slick-prev {
     left: auto;
-    right: -25px; }
+    right: 22px;
+    z-index: 3; }
   .slick-prev:before {
     content: "←"; }
     [dir="rtl"] .slick-prev:before {
       content: "→"; }
 
 .slick-next {
-  right: -25px; }
+  right: 64px; }
   [dir="rtl"] .slick-next {
-    left: -25px;
-    right: auto; }
+    left: 64px;
+    right: auto;
+    z-index: 2; }
   .slick-next:before {
     content: "→"; }
     [dir="rtl"] .slick-next:before {
