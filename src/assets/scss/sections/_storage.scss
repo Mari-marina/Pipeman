@@ -1,9 +1,20 @@
 @import "./../vars/vars";
 
 .storage {
+  position: relative;
   background-image: url(./../images/storage.png);
+  
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    @media all and (min-width: 1800px) {
+      background-size: 100%;
+    }
+    @media all and (max-width: 800px) {
+      background-position-x: 83%;
+    }
   &__title {
-    padding: 150px 0 500px;
+    padding: 150px 0 600px;
     color: $accentColor;
     font-weight: 700;
     font-size: 40px;
@@ -11,5 +22,112 @@
     margin-left: 30px;
     max-width: 736px;
     width: 100%;
+    @media all and (max-width: 1160px) {
+      padding: 100px 0 600px;
+    }
+    @media all and (max-width: 1050px) {
+      padding: 50px 0 600px;
+    }
+    @media all and (max-width: 760px) {
+      max-width: 542px;
+      width: 100%;
+      padding-right: 36px;
+      font-size: 34px;
+    }
+    @media all and (max-width: 440px) {
+      font-size: 30px;
+    }
   }
+  &__span_first,
+  &__span_second,
+  &__span_third {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.37;
+    font-family: "Roboto";
+    font-family: "Nunito Sans";
+    position: absolute;
+    @media all and (max-width: 470px) {
+      font-size: 20px;
+    }
+  }
+  &__span_third {
+    right: 844px;
+    bottom: 106px;
+    @media all and (max-width: 1160px) {
+      right: 680px;
+    bottom: 70px;
+    }
+    @media all and (max-width: 940px) {
+      right: 560px;
+    bottom: 60px;
+    }
+    @media all and (max-width: 827px) {
+      right: 368px;
+    bottom: 32px;
+    }
+    @media all and (max-width: 660px) {
+      right: 190px;
+    bottom: 38px;
+    }
+    @media all and (max-width: 440px) {
+      right: 83px;
+    bottom: 57px;
+    }
+}
+&__span_first {
+  right: 454px;
+  bottom: 440px;
+  @media all and (max-width: 1160px) {
+    bottom: 420px;
+  }
+  @media all and (max-width: 1050px) {
+    bottom: 400px;
+  }
+  @media all and (max-width: 800px) {
+    right: 270px;
+  }
+  @media all and (max-width: 516px) {
+    right: 212px;
+    bottom: 420px;
+  }
+  @media all and (max-width: 460px) {
+    bottom: 430px;
+  }
+  @media all and (max-width: 400px) {
+    right: 178px;
+  }
+}
+&__span_second {
+  right: 522px;
+  bottom: 212px;
+  @media all and (max-width: 1160px) {
+  bottom: 186px;
+  }
+  @media all and (max-width: 1050px)  {
+    bottom: 166px;
+  }
+  @media all and (max-width: 800px) {
+    right: 334px;
+  }
+  @media all and (max-width: 544px) {
+    right: 286px;
+  }
+  @media all and (max-width: 516px)  {
+    bottom: 186px;
+  }
+  @media all and (max-width: 490px)  {
+    right: 266px;
+  }
+  @media all and (max-width: 468px)  {
+    bottom: 200px;
+  }
+  @media all and (max-width: 440px) {
+    bottom: 190px;
+  }
+  @media all and (max-width: 412px) {
+    right: 220px;
+  }
+}
 }
