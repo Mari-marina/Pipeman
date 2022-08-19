@@ -580,11 +580,16 @@ label {
 
 .certificates__img {
   width: 100%;
-  height: 400px; }
+  height: 414px;
+  object-fit: cover; }
 
 .certificates__slider {
   height: 100%;
-  width: auto; }
+  width: auto;
+  margin-bottom: 100px; }
+  @media all and (max-width: 900px) {
+    .certificates__slider {
+      margin-bottom: 50px; } }
 
 .storage {
   background-image: url(./../images/storage.png); }
@@ -736,8 +741,8 @@ label {
 .slick-next {
   position: absolute;
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 70px;
+  width: 70px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
@@ -786,9 +791,9 @@ label {
       content: "→"; }
 
 .slick-next {
-  right: 64px; }
+  right: 22px; }
   [dir="rtl"] .slick-next {
-    left: 64px;
+    left: 22px;
     right: auto;
     z-index: 2; }
   .slick-next:before {

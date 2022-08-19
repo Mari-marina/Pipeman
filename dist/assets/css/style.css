@@ -418,6 +418,24 @@ body {
     -o-border-radius: 10px;
 }
 
+@media all and (max-width: 1030px) {
+    .header__wrap {
+        top: 480px;
+    }
+}
+
+@media all and (max-width: 930px) {
+    .header__wrap {
+        max-width: 490px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .header__wrap {
+        max-width: 360px;
+    }
+}
+
 .header__wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -432,9 +450,37 @@ body {
     margin: 100px 0;
 }
 
+@media all and (max-width: 1235px) {
+    .header__content {
+        margin: 50px 0;
+    }
+}
+
+@media all and (max-width: 1030px) {
+    .header__content {
+        margin: 0;
+    }
+}
+
 .header__video {
-    min-width: 100%;
-    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media all and (max-width: 930px) {
+    .header__video {
+        height: 700px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .header__video {
+        height: 800px;
+    }
 }
 
 .header__title {
@@ -445,11 +491,25 @@ body {
     font-weight: 300px;
 }
 
+@media all and (max-width: 930px) {
+    .header__title {
+        line-height: 1.5;
+        font-size: 32px;
+    }
+}
+
 .header__subtitle {
     font-size: 36px;
     line-height: 1.2;
     color: #ffffff;
     text-align: center;
+}
+
+@media all and (max-width: 930px) {
+    .header__subtitle {
+        line-height: 1.2;
+        font-size: 31px;
+    }
 }
 
 .header__button {
@@ -466,11 +526,27 @@ body {
     -o-border-radius: 4px;
 }
 
+@media all and (max-width: 1030px) {
+    .header__button {
+        margin-top: 20px;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
 .header__text, .header__text__link {
     color: #ffffff;
     font-size: 13px;
     line-height: 16px;
     opacity: .9;
+}
+
+@media all and (max-width: 1030px) {
+    .header__text {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .header__form {
@@ -483,12 +559,27 @@ body {
     margin-bottom: 20px;
 }
 
+@media all and (max-width: 930px) {
+    .header__form {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 label {
     color: transparent;
 }
 
 .form-group {
     position: relative;
+}
+
+@media all and (max-width: 930px) {
+    .form-group {
+        margin-top: 24px;
+    }
 }
 
 .form-group + .form-group {
@@ -544,6 +635,18 @@ label {
     font-size: 16px;
 }
 
+@media all and (max-width: 1030px) {
+    .nav__list {
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .nav__list {
+        font-size: 16px;
+    }
+}
+
 .nav__button {
     width: 174px;
     height: 40px;
@@ -576,6 +679,19 @@ label {
     margin-left: 20px;
 }
 
+@media all and (max-width: 1030px) {
+    .nav__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 1030px) {
+    .nav__item {
+        margin-top: 30px;
+    }
+}
+
 .nav__item:first-child:hover, .nav__item:nth-child(2):hover, .nav__item:nth-child(3):hover {
     border-bottom: solid 0.5px #ffbd03;
 }
@@ -599,6 +715,14 @@ label {
     justify-content: space-between;
 }
 
+@media all and (max-width: 1030px) {
+    .nav__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+}
+
 .certificates__title {
     font-weight: 400;
     font-size: 40px;
@@ -614,8 +738,15 @@ label {
 }
 
 .certificates__img {
-    max-width: 400px;
     width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.certificates__slider {
+    height: 100%;
+    width: auto;
 }
 
 .storage {
@@ -813,8 +944,8 @@ label {
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 70px;
+    width: 70px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
@@ -850,7 +981,7 @@ label {
 .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
-    font-size: 20px;
+    font-size: 70px;
     line-height: 1;
     color: white;
     opacity: 0.75;
@@ -859,12 +990,14 @@ label {
 }
 
 .slick-prev {
-    left: -25px;
+    z-index: 3;
+    left: 22px;
 }
 
 [dir="rtl"] .slick-prev {
     left: auto;
-    right: -25px;
+    right: 22px;
+    z-index: 3;
 }
 
 .slick-prev:before {
@@ -876,12 +1009,13 @@ label {
 }
 
 .slick-next {
-    right: -25px;
+    right: 22px;
 }
 
 [dir="rtl"] .slick-next {
-    left: -25px;
+    left: 22px;
     right: auto;
+    z-index: 2;
 }
 
 .slick-next:before {
