@@ -716,18 +716,28 @@ label {
 
 .delivery {
   background-image: url(./../images/delivery.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat; }
   .delivery__wrap {
-    padding: 200px 0 500px;
+    padding: 200px 0 380px;
     max-width: 582px;
     width: 100%; }
+    @media all and (max-width: 800px) {
+      .delivery__wrap {
+        padding: 150px 0 300px; } }
   .delivery__title {
     color: #ffffff;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.2;
     margin-bottom: 150px; }
+    @media all and (max-width: 680px) {
+      .delivery__title {
+        margin-bottom: 100px;
+        padding: 0 20px 0 0px; } }
+    @media all and (max-width: 450px) {
+      .delivery__title {
+        margin-bottom: 50px; } }
   .delivery__button {
     max-width: 256px;
     width: 100%;
@@ -741,6 +751,9 @@ label {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px; }
+  @media all and (max-width: 680px) {
+    .delivery {
+      padding: 0 0 0 30px; } }
 
 .orders__title {
   font-weight: 400;

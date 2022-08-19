@@ -2,12 +2,15 @@
 @import "./../vars/vars";
 .delivery {
   background-image: url(./../images/delivery.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   &__wrap {
-    padding: 200px 0 500px;
+    padding: 200px 0 380px;
     max-width: 582px;
     width: 100%;
+    @media all and (max-width: 800px) {
+      padding: 150px 0 300px;
+    }
   }
   &__title {
     color: #ffffff;
@@ -15,6 +18,13 @@
     font-size: 40px;
     line-height: 1.2;
     margin-bottom: 150px;
+    @media all and (max-width: 680px) {
+      margin-bottom: 100px;
+      padding: 0 20px 0 0px;
+    }
+    @media all and (max-width: 450px) {
+      margin-bottom: 50px;
+    }
   }
   &__button {
   max-width: 256px;
@@ -29,5 +39,8 @@
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  }
+  @media all and (max-width: 680px) {
+    padding: 0 0 0 30px;
   }
 }
