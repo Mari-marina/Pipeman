@@ -1,0 +1,49 @@
+@import "./../vars/vars"; 
+
+.footer {
+  background: black;
+  &__icon {
+    width: 50px;
+    &:hover {
+      opacity: 0.9;
+}
+  }
+  &__list {
+    display: flex;
+    @media all and (max-width: 880px) {
+      margin-top: 20px;
+    }
+  }
+  &__item {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__wrap {
+    display: flex;
+    @media all and (max-width: 880px) {
+      margin-top: 20px;
+    }
+    
+  }
+  &__text,
+  &__phone {
+    color: $accentColor;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  &__phone {
+    margin-left: 6px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    @media all and (max-width: 880px) {
+      flex-direction: column;
+      padding: 50px 14px;
+    }
+  }
+}

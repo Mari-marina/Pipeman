@@ -1,6 +1,7 @@
 @import "./../vars/vars";
  
 .centers {
+  background: #dbdbdb;
   &__city {
     display: flex;
     justify-content: space-around;
@@ -37,9 +38,9 @@
     line-height: 1.2;
     font-weight: 700;
     text-align: center;
-    margin: 50px 0 20px;
+    padding: 50px 0 20px;
     @media all and (max-width: 1180px) {
-      margin: 50px 0 10px;
+      padding: 50px 0 10px;
       line-height: 1;
     }
     @media all and (max-width: 440px) {
