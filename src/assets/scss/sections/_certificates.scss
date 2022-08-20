@@ -9,6 +9,9 @@
     text-align: center;
     margin: 0 auto;
     padding: 50px 20px;
+    @media all and (max-width: 440px) {
+      font-size: 30px;
+    }
   }
   &__title_bold {
     font-weight: 700;
