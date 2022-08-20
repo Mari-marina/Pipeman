@@ -11,6 +11,9 @@
       align-items: center;
     }
   }
+  &__city:last-child {
+    padding-bottom: 40px;
+  }
   &__img {
     height: 490px;
     @media all and (max-width: 490px) {

@@ -64,6 +64,9 @@
     line-height: 1.5;
     font-size: 32px;
   }
+  @media all and (max-width: 440px) {
+    line-height: 1.2;
+  }
 }
 &__subtitle {
   font-size: 36px;
@@ -87,7 +90,7 @@
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  @media all and (max-width: 1030px) {
+  @media all and (max-width: 930px) {
     margin-top: 20px;
     max-width: 300px;
     width: 100%;
@@ -124,49 +127,91 @@ label {
 }
 
 
-.form-group {
-  position:relative; 
-  @media all and (max-width: 930px) {
-    margin-top: 24px;
-  } 
+// .form-group {
+//   position:relative; 
+//   @media all and (max-width: 930px) {
+//     margin-top: 24px;
+//   } 
 
-  & + .form-group {
-    margin-top: 30px;
-  }
-}
+//   & + .form-group {
+//     margin-top: 30px;
+//   }
+// }
 
-.header__form-label {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  color: #999;
-  background-color: transparent;
-  z-index: 10;
-  transition: transform 150ms ease-out, font-size 150ms ease-out;
-}
+// .header__form-label {
+//   position: absolute;
+//   left: 0;
+//   top: 10px;
+//   color: #999;
+//   background-color: transparent;
+//   z-index: 10;
+//   transition: transform 150ms ease-out, font-size 150ms ease-out;
+// }
 
-.focused .header__form-label {
-  transform: translateY(-125%);
-  font-size: .75em;
-}
+// .focused .header__form-label {
+//   transform: translateY(-125%);
+//   font-size: .75em;
+// }
 
-.form-input {
-  position: relative;
-  padding: 12px 0px 5px 0;
-  width: 200px;
-  outline: 0;
-  border: 0;
-  background: transparent;
-  box-shadow: 0 1px 0 0 #e5e5e5;
-  transition: box-shadow 150ms ease-out;
+// .form-input {
+//   position: relative;
+//   padding: 12px 0px 5px 0;
+//   width: 200px;
+//   outline: 0;
+//   border: 0;
+//   background: transparent;
+//   box-shadow: 0 1px 0 0 #e5e5e5;
+//   transition: box-shadow 150ms ease-out;
   
-  &:focus {
-    box-shadow: 0 2px 0 0 #ffbd03;
+//   &:focus {
+//     box-shadow: 0 2px 0 0 #ffbd03;
     
-  }
+//   }
   
-}
+// }
 
-.form-input.filled {
-  box-shadow: 0 2px 0 0 lightgreen;
+// .form-input.filled {
+//   box-shadow: 0 2px 0 0 lightgreen;
+// }
+
+.input-group
+{
+    position: relative;
+    @media all and (max-width: 930px)  {
+      margin-top: 24px;
+    }
+}
+.input
+{ 
+    color: #ffffff; 
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+}
+.placeholder
+{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #ffffff;
+    transition: 0.3s;
+    pointer-events: none;
+    
+}
+.input:focus + .placeholder, input:not(:placeholder-shown) + label {
+    top: -10px;
+    color: rgb(223, 220, 220);
+    background-color: transparent;
+    
+}
+.input::placeholder {
+  color:transparent
 }

@@ -78,6 +78,10 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     border: none;
     outline: none;
+    @media all and (max-width: 880px)  {
+        height: 50px;
+    width: 50px;
+    }
     &:hover, &:focus {
         outline: none;
         background: transparent;
@@ -97,12 +101,19 @@ $slick-opacity-not-active: 0.25 !default;
         opacity: $slick-opacity-default;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        @media all and (max-width: 880px)  {
+            font-size: 48px;
+        }
     }
+    
 }
 
 .slick-prev {
     z-index: 3;
     left: 22px;
+    @media all and (max-width: 880px)  {
+        left: 8px;
+    }
     [dir="rtl"] & {
         left: auto;
         right: 22px;
@@ -118,6 +129,9 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-next {
     right: 22px;
+    @media all and (max-width: 880px)  {
+        right: 8px;
+    }
     [dir="rtl"] & {
         left: 22px;
         right: auto;

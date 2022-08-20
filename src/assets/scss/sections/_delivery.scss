@@ -11,6 +11,9 @@
     @media all and (max-width: 800px) {
       padding: 150px 0 300px;
     }
+    @media all and (max-width: 440px) {
+      padding: 110px 0 300px;
+    }
   }
   &__title {
     color: #ffffff;
@@ -24,6 +27,9 @@
     }
     @media all and (max-width: 450px) {
       margin-bottom: 50px;
+    }
+    @media all and (max-width: 440px) {
+      font-size: 30px;
     }
   }
   &__button {
