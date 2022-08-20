@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="header__wrapper">
-            <video class="header__video" src="./assets/video/main.mp4" autoplay muted loop></video>
+            <video class="header__video" src="./assets/video/main.mp4" muted playsinline autoplay loop></video>
             <div class="header__wrap">
                 <div class="header__content">
                     <h1 class="header__title">Материалы для отопления и водоснабжения оптовикам и монтажникам</h1>
@@ -117,7 +117,10 @@
     <section class="stock">
         <div class="container">
             <div class="stock__wrapper">
-                <video class="stock__video" src="./assets/video/stock.mp4" autoplay muted loop controls></video>
+                <video class="stock__video" id="vid" src="./assets/video/stock.mp4" muted playsinline loop></video>
+                <script>
+                    document.getElementById('vid').play();
+                </script>
                 <div class="stock__wrap">
                     <h2 class="stock__title">Проводим регулярные <span class="stock__title_bold">акции и конкурсы с
                             подарками.
@@ -128,11 +131,19 @@
         </div>
     </section>
     <section class="seminars">
-        <h2 class="seminars__title"><span class="seminars__title_bold">
-                Проводим полезные семинары</span>для усиления своих
-            партнеров</h2>
-        <button class="seminars__btn">СКАЧАТЬ ЗАПИСЬ СЕМИНАРА</button>
-        <img class="seminars__img" src="" alt="">
+        <div class="container">
+            <div class="seminars__wrapper">
+                <div class="seminars__wrap">
+                    <h2 class="seminars__title"><span class="seminars__title_bold">
+                            Проводим полезные семинары</span>для усиления своих
+                        партнеров</h2>
+                    <a class="seminars__link" href="#" download="">
+                        <button class="seminars__btn">СКАЧАТЬ ЗАПИСЬ СЕМИНАРА <i class="seminars__download"></i></button>
+                    </a>
+                </div>
+                <img class="seminars__img" src="./assets/images/seminars.webp" alt="">
+            </div>
+        </div>
     </section>
     <section class="cooperation">
         <h2 class="cooperation__title">Мы работаем с 1996 года! <br>
