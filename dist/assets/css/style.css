@@ -1182,6 +1182,7 @@ label {
     font-size: 40px;
     line-height: 1.2;
     margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 @media all and (max-width: 1180px) {
@@ -1203,19 +1204,14 @@ label {
 .seminars__img {
     max-width: 678px;
     width: 100%;
+    height: 700px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 @media all and (max-width: 1180px) {
     .seminars__img {
-        -o-object-fit: cover;
-        object-fit: cover;
-        height: 500px;
-    }
-}
-
-@media all and (max-width: 780px) {
-    .seminars__img {
-        height: 350px;
+        height: 100%;
     }
 }
 

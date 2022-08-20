@@ -36,12 +36,10 @@
   &__img  {
     max-width: 678px; 
     width: 100%;
+    height: 700px;
+    object-fit: cover;
     @media all and (max-width: 1180px) {
-      object-fit: cover;
-      height: 500px;
-    }
-    @media all and (max-width: 780px) {
-      height: 350px;
+      height: 100%;
     }
 
   }

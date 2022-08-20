@@ -1,0 +1,46 @@
+@import "./../vars/vars";
+
+
+.cooperation {
+  background-image: url(./../images/team.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    @media all and (max-width: 930px) {
+      background-position-x: left;
+    }
+    &__title {
+      color: $accentColor;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.2;
+      padding: 30px 80px;
+      @media all and (max-width: 1010px) {
+        padding: 20px 40px;
+      }
+      @media all and (max-width: 850px) {
+        line-height: 1;   
+      }
+    }
+    &__wrap {
+      max-width: 1133px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      margin: 0 auto;  
+}
+&__wrapper {
+  padding: 50px 0 500px;
+  @media all and (max-width: 1133px) {
+    padding: 50px 20px 400px;
+  }
+  @media all and (max-width: 800px) {
+    padding: 50px 20px 350px;
+  }
+}
+}
+
