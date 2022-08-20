@@ -942,7 +942,8 @@ label {
 
 .centers__city {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: 90px; }
   @media all and (max-width: 1180px) {
     .centers__city {
       flex-direction: column;
@@ -974,10 +975,10 @@ label {
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-  margin: 50px 0 50px; }
+  margin: 50px 0 20px; }
   @media all and (max-width: 1180px) {
     .centers__title {
-      margin: 50px 0 30px;
+      margin: 50px 0 10px;
       line-height: 1; } }
   @media all and (max-width: 440px) {
     .centers__title {
