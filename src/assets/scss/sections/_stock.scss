@@ -1,0 +1,59 @@
+@import "./../vars/vars";
+
+.stock {
+  background: #2c2c2c;
+  &__video {
+    max-height: 710px;
+    height: 100%;
+    @media all and (max-width: 850px) {
+      max-width: 439px;
+      width: 100%;
+      
+    }
+  }
+  &__title {
+    color: $accentColor;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    max-width: 605px;
+    margin-bottom: 50px;
+    @media all and (max-width: 850px) {
+      line-height: 1;
+      
+    }
+  }
+  &__title_bold {
+    font-weight: 700;
+  }
+  &__button {
+    max-width: 230px;
+    width: 100%;
+    height: 56px;
+    border: none;
+    background: $accentColor;
+    color: #1b1b1c;
+    font-family: "Nunito Sans";
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media all and (max-width: 850px) {
+      flex-direction: column-reverse;
+    }
+    
+  }
+  &__wrap{
+    padding: 0 10px 0 20px;
+    @media all and (max-width: 850px) {
+      max-width: 440px;
+      margin: 30px 0;
+    }
+  }
+}
