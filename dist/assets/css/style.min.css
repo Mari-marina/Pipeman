@@ -360,10 +360,10 @@ button:hover {
   opacity: 0.9; }
 
 input {
-  font-family: "NunitRaleway-Medium"; }
+  font-family: "Raleway-Medium"; }
 
 label {
-  font-family: "NunitRaleway-Medium"; }
+  font-family: "Raleway-Medium"; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -748,21 +748,27 @@ label {
     padding: 200px 0 380px;
     max-width: 582px;
     width: 100%; }
+    @media all and (max-width: 1100px) {
+      .delivery__wrap {
+        padding: 160px 0 310px; } }
     @media all and (max-width: 800px) {
       .delivery__wrap {
-        padding: 150px 0 300px; } }
+        padding: 140px 0 290px; } }
     @media all and (max-width: 440px) {
       .delivery__wrap {
-        padding: 110px 0 300px; } }
+        padding: 110px 0 290px; } }
   .delivery__title {
     color: #ffffff;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.2;
     margin-bottom: 150px; }
+    @media all and (max-width: 1100px) {
+      .delivery__title {
+        margin-bottom: 90px; } }
     @media all and (max-width: 680px) {
       .delivery__title {
-        margin-bottom: 100px;
+        margin-bottom: 70px;
         padding: 0 20px 0 0px; } }
     @media all and (max-width: 450px) {
       .delivery__title {
@@ -1093,6 +1099,92 @@ label {
       .footer__wrapper {
         flex-direction: column;
         padding: 50px 14px; } }
+
+.modal,
+.modal-novorossiysk,
+.modal-rostov {
+  background: rgba(14, 7, 7, 0.8);
+  display: none;
+  justify-content: center;
+  perspective: 500px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  align-items: center; }
+  .modal__subtitle,
+  .modal-novorossiysk__subtitle,
+  .modal-rostov__subtitle {
+    font-weight: 700;
+    font-family: "Raleway-Bold";
+    font-size: 22px;
+    line-height: 1.37;
+    margin-bottom: 20px; }
+  .modal__wrap,
+  .modal-novorossiysk__wrap,
+  .modal-rostov__wrap {
+    max-width: 195px;
+    width: 100%;
+    margin-left: 40px; }
+    @media all and (max-width: 656px) {
+      .modal__wrap,
+      .modal-novorossiysk__wrap,
+      .modal-rostov__wrap {
+        margin: 0 auto;
+        padding-top: 10px; } }
+  .modal__text,
+  .modal-novorossiysk__text,
+  .modal-rostov__text {
+    margin-bottom: 10px; }
+  .modal__map,
+  .modal-novorossiysk__map,
+  .modal-rostov__map {
+    max-width: 400px;
+    height: 100%; }
+    @media all and (max-width: 656px) {
+      .modal__map,
+      .modal-novorossiysk__map,
+      .modal-rostov__map {
+        width: 100%; } }
+
+.modal-wrapper {
+  position: relative;
+  max-width: 800px;
+  max-height: 228px;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(52, 119, 196, 0.35), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0 10px; }
+  @media all and (max-width: 656px) {
+    .modal-wrapper {
+      max-height: 382px;
+      max-width: 400px;
+      overflow: hidden; } }
+
+.modal-header {
+  display: flex;
+  align-items: center; }
+  @media all and (max-width: 656px) {
+    .modal-header {
+      flex-direction: column; } }
+
+.close-btn,
+.close-btn2,
+.close-btn3 {
+  z-index: 2;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute; }
 
 /* Slider */
 .slick-slider {

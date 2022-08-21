@@ -18,15 +18,15 @@
 </head>
 
 <body>
-    <header class="header" id="top">
-        <div class="header__nav nav">
+    <header class="header">
+        <div class="header__nav nav" id="top">
             <div class="container">
                 <div class="nav__wrapper">
                     <img class="nav__logo logo" src="./assets/images/logo.webp" alt="">
                     <ul class="nav__list">
-                        <li class="nav__item">Краснодар</li>
-                        <li class="nav__item">Новороссийск</li>
-                        <li class="nav__item">Ростов-на-Дону</li>
+                        <li class="nav__item" id="modalOpen1">Краснодар</li>
+                        <li class="nav__item" id="modalOpen2">Новороссийск</li>
+                        <li class="nav__item" id="modalOpen3">Ростов-на-Дону</li>
                         <li class="nav__item">
                             <a href="tel:89898146636" class="nav__phone">
                                 8 (989) 814-66-36
@@ -310,9 +310,55 @@
         </div>
         </div>
     </footer>
+    
+    <div class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <img class="close-btn" src="./assets/images/icons/cross.png" alt="">
+                <!-- <span class="close-btn">X</span> -->
+                <div class="modal__map" style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.by/maps/35/krasnodar/?ll=39.057857%2C45.062455&mode=routes&rtext=45.092150%2C38.999244~45.043292%2C39.116492&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM5ODA0MRKPAdCg0L7RgdGB0LjRjywg0JrRgNCw0YHQvdC%2B0LTQsNGALCDQn9GA0LjQutGD0LHQsNC90YHQutC40Lkg0LLQvdGD0YLRgNC40LPQvtGA0L7QtNGB0LrQvtC5INC%2B0LrRgNGD0LMsINCQ0LLRgtC%2B0LzQvtCx0LjQu9GM0L3QsNGPINGD0LvQuNGG0LAsIDEzIgoNO%2F8bQhVcXjRC~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMTM2NTM0NTY4EkbQoNC%2B0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0KPRgNCw0LvRjNGB0LrQsNGPINGD0LvQuNGG0LAsIDIxMi8yIgoNSnccQhVVLDRC&utm_medium=mapframe&utm_source=maps&z=13.19" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCURnPxx9D" width="400" height="224" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                <div class="modal__wrap">
+                    <h2 class="modal__subtitle">Наши магазины в Краснодаре:</h2>
+                    <p class="modal__text">ул. Автомобильная, 13</p>
+                    <p class="modal__text">ул. Уральская, 212/2</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-novorossiysk">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <img class="close-btn2" src="./assets/images/icons/cross.png" alt="">
+                <!-- <span class="close-btn">X</span> -->
+                <div class="modal__map" style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/970/novorossiysk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Новороссийск</a><a href="https://yandex.by/maps/970/novorossiysk/house/ulitsa_lenina_22/Z04YcQVmSEEEQFpufXt1eXtlbA==/?ll=37.726142%2C44.748768&utm_medium=mapframe&utm_source=maps&z=16.65" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ленина, 22 — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCURnTuxlC" width="400" height="224" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                <div class="modal__wrap">
+                    <h2 class="modal__subtitle">Наши магазины в Новороссийске:</h2>
+                    <p class="modal__text">с. Цемдолина ул. Ленина 22</p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-rostov">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <img class="close-btn3" src="./assets/images/icons/cross.png" alt="">
+                <div class="modal__map" style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.by/maps/39/rostov-na-donu/house/ulitsa_vavilova_71v/Z0AYcA9jSkEAQFptfX52eH9kZg==/?ll=39.683347%2C47.279373&utm_medium=mapframe&utm_source=maps&z=16.65" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Вавилова, 71В — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCURnTBSHD" width="400" height="224" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                <div class="modal__wrap">
+                    <h2 class="modal__subtitle">Наши магазины в Ростове-на-Дону:</h2>
+                    <p class="modal__text">ул. Вавилова, 71В</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
     <script type="text/javascript">
         $('.centers__slider').slick({
             slidesToShow: 1,
