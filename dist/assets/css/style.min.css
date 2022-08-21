@@ -1,5 +1,21 @@
 @charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url(./../fonts/Raleway-Bold.ttf); }
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url(./../fonts/Raleway-Light.ttf); }
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(./../fonts/Raleway-Medium.ttf); }
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url(./../fonts/Raleway-SemiBold.ttf); }
+
 /* Document
    ========================================================================== */
 /**
@@ -315,7 +331,7 @@ h2,
 h3,
 h4,
 li {
-  font-family: "Nunito Sans"; }
+  font-family: "Raleway-Medium"; }
 
 li {
   list-style-type: none; }
@@ -344,10 +360,10 @@ button:hover {
   opacity: 0.9; }
 
 input {
-  font-family: "Nunito Sans"; }
+  font-family: "NunitRaleway-Medium"; }
 
 label {
-  font-family: "Nunito Sans"; }
+  font-family: "NunitRaleway-Medium"; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -355,7 +371,10 @@ label {
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto"; }
+  font-family: "Raleway-Medium"; }
+
+button {
+  font-family: "Raleway-Bold"; }
 
 .header__wrap {
   top: 220px;
@@ -408,6 +427,7 @@ body {
       height: 800px; } }
 
 .header__title {
+  font-family: "Raleway-Bold";
   color: #ffbd03;
   text-align: center;
   font-size: 40px;
@@ -422,6 +442,7 @@ body {
       line-height: 1.2; } }
 
 .header__subtitle {
+  font-family: "Raleway-Light";
   font-size: 36px;
   line-height: 1.2;
   color: #ffffff;
@@ -437,7 +458,6 @@ body {
   border: none;
   background: #ffbd03;
   color: #1b1b1c;
-  font-family: "Nunito Sans";
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -757,7 +777,6 @@ label {
     border: none;
     background: #ffbd03;
     color: #1b1b1c;
-    font-family: "Nunito Sans";
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -835,7 +854,6 @@ label {
     border: none;
     background: #ffbd03;
     color: #1b1b1c;
-    font-family: "Nunito Sans";
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -862,7 +880,6 @@ label {
   border: none;
   background: #ffbd03;
   color: #1b1b1c;
-  font-family: "Nunito Sans";
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1018,8 +1035,7 @@ label {
   .centers__span {
     font-size: 16px;
     line-height: 1.37;
-    font-weight: 400;
-    font-family: "Nunito Sans"; }
+    font-weight: 400; }
   .centers__phone {
     text-decoration: none;
     color: black; }
@@ -1030,7 +1046,6 @@ label {
     border: none;
     background: #ffbd03;
     color: #ffffff;
-    font-family: "Nunito Sans";
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;

@@ -1,5 +1,25 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url(./../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url(./../fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(./../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url(./../fonts/Raleway-SemiBold.ttf);
+}
+
 /* Document
    ========================================================================== */
 
@@ -360,7 +380,7 @@ h2,
 h3,
 h4,
 li {
-  font-family: "Nunito Sans";
+  font-family: "Raleway-Medium";
 }
 li {
   list-style-type: none;
@@ -409,10 +429,10 @@ button:hover {
 //   }
 // }
 input {
-  font-family: "Nunito Sans";
+  font-family: "NunitRaleway-Medium";
 }
 label {
-  font-family: "Nunito Sans";
+  font-family: "NunitRaleway-Medium";
 }
 
 * {
@@ -422,5 +442,8 @@ label {
   // border: .5px solid red;
 }
 body {
-  font-family: "Roboto";
+  font-family: "Raleway-Medium";
+}
+button {
+  font-family: "Raleway-Bold";
 }
