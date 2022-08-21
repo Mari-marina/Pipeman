@@ -10,9 +10,10 @@
   bottom: 0;
   right: 0;
   position: fixed;
-  // opacity: 90%;
-  align-items: center; 
-  &__subtitle {
+  //opacity: 90%;
+  align-items: center;
+    &__subtitle 
+    {
     font-weight: 700;
     font-family: "Raleway-Bold";
     font-size: 22px;
