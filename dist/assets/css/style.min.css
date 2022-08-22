@@ -1252,9 +1252,6 @@ label {
   max-width: 400px;
   width: 100%;
   object-fit: cover; }
-  @media all and (max-width: 840px) {
-    .modal-form__img {
-      display: none; } }
 
 .modal-form__wrapper, .modal-form__wrapper_second {
   margin: 0 auto;

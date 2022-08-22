@@ -130,9 +130,9 @@
     max-width: 400px;
     width: 100%;
     object-fit: cover;
-    @media all and (max-width: 840px) {
-      display: none;
-    }
+    // @media all and (max-width: 840px) {
+    //   display: none;
+    // }
   }
   &__wrapper,
   &__wrapper_second {
