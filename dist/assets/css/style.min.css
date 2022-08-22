@@ -1104,7 +1104,8 @@ label {
 .modal-novorossiysk,
 .modal-rostov,
 .modal-form,
-.modal-form_second {
+.modal-form_second,
+.modal-form_delivery {
   background: rgba(14, 7, 7, 0.8);
   display: none;
   justify-content: center;
@@ -1119,7 +1120,8 @@ label {
   .modal-novorossiysk__subtitle,
   .modal-rostov__subtitle,
   .modal-form__subtitle,
-  .modal-form_second__subtitle {
+  .modal-form_second__subtitle,
+  .modal-form_delivery__subtitle {
     font-weight: 700;
     font-family: "Raleway-Bold";
     font-size: 22px;
@@ -1130,13 +1132,15 @@ label {
       .modal-novorossiysk__subtitle,
       .modal-rostov__subtitle,
       .modal-form__subtitle,
-      .modal-form_second__subtitle {
+      .modal-form_second__subtitle,
+      .modal-form_delivery__subtitle {
         margin-bottom: 2px; } }
   .modal__wrap,
   .modal-novorossiysk__wrap,
   .modal-rostov__wrap,
   .modal-form__wrap,
-  .modal-form_second__wrap {
+  .modal-form_second__wrap,
+  .modal-form_delivery__wrap {
     padding: 0 8px;
     max-width: 195px;
     width: 100%;
@@ -1146,20 +1150,23 @@ label {
       .modal-novorossiysk__wrap,
       .modal-rostov__wrap,
       .modal-form__wrap,
-      .modal-form_second__wrap {
+      .modal-form_second__wrap,
+      .modal-form_delivery__wrap {
         margin: 0 auto;
         padding-top: 10px; } }
   .modal__text,
   .modal-novorossiysk__text,
   .modal-rostov__text,
   .modal-form__text,
-  .modal-form_second__text {
+  .modal-form_second__text,
+  .modal-form_delivery__text {
     margin-bottom: 10px; }
   .modal__map,
   .modal-novorossiysk__map,
   .modal-rostov__map,
   .modal-form__map,
-  .modal-form_second__map {
+  .modal-form_second__map,
+  .modal-form_delivery__map {
     max-width: 400px;
     height: 100%; }
     @media all and (max-width: 656px) {
@@ -1167,7 +1174,8 @@ label {
       .modal-novorossiysk__map,
       .modal-rostov__map,
       .modal-form__map,
-      .modal-form_second__map {
+      .modal-form_second__map,
+      .modal-form_delivery__map {
         width: 100%;
         margin-top: 26px; } }
 
@@ -1202,7 +1210,8 @@ label {
 .close-btn2,
 .close-btn3,
 .close-btn4,
-.close-btn5 {
+.close-btn5,
+.close-btn9 {
   z-index: 2;
   right: 10px;
   top: 10px;
@@ -1354,6 +1363,9 @@ label {
       flex-direction: column;
       align-items: center; } }
 
+.modal-form__img-deliv {
+  max-width: 445px; }
+
 .modal-form_second-input {
   height: 47px;
   border-radius: 7px;
@@ -1385,6 +1397,9 @@ label {
   font-size: 15px;
   font-family: "Raleway-Light";
   color: #1b1b1c; }
+
+#start {
+  border: 1px solid rgba(27, 27, 28, 0.15); }
 
 /* Slider */
 .slick-slider {

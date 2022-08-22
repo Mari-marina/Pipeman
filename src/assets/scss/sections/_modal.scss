@@ -2,7 +2,8 @@
 .modal-novorossiysk,
 .modal-rostov,
 .modal-form,
-.modal-form_second {
+.modal-form_second,
+.modal-form_delivery {
   background: rgba(14, 7, 7, 0.8);
   display: none;
   justify-content: center;
@@ -84,7 +85,8 @@
 .close-btn2,
 .close-btn3,
 .close-btn4,
-.close-btn5  {
+.close-btn5,
+.close-btn9  {
   z-index: 2;
   right: 10px;
   top: 10px;
@@ -248,6 +250,9 @@
     align-items: center;
   }
 }
+&__img-deliv {
+  max-width: 445px;
+}
 }
 
 .modal-form_second-input {
@@ -282,4 +287,7 @@
   font-size: 15px;
   font-family: "Raleway-Light";
   color: #1b1b1c;
+}
+#start {
+  border: 1px solid rgba(27, 27, 28, 0.15);
 }
