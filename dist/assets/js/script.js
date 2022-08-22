@@ -58,4 +58,21 @@ window.addEventListener("click", function (event) {
     modalRostov.style.display = "none";
   }
 });
+
+let openModalBtn4 = document.getElementById("modalOpen4");
+let modalForm = document.querySelector(".modal-form");
+let closeModalBtn4 = document.querySelector(".close-btn4");
+
+openModalBtn4.addEventListener("click", function () {
+  modalForm.style.display = "flex";
+});
+
+closeModalBtn4.addEventListener("click", function () {
+  modalForm.style.display = "none";
+});
+window.addEventListener("click", function (event) {
+  if (event.target === modalForm) {
+    modalForm.style.display = "none";
+  }
+});
 //# sourceMappingURL=script.js.map

@@ -1,6 +1,7 @@
 .modal,
 .modal-novorossiysk,
-.modal-rostov {
+.modal-rostov,
+.modal-form {
   background: rgba(14, 7, 7, 0.8);
   display: none;
   justify-content: center;
@@ -75,7 +76,8 @@
 
 .close-btn,
 .close-btn2,
-.close-btn3 {
+.close-btn3,
+.close-btn4 {
   z-index: 2;
   right: 10px;
   top: 10px;
@@ -83,4 +85,95 @@
   height: 24px;
   cursor: pointer;
   position: absolute;
+}
+
+.modal-form {
+  &__label {
+    width: 100%;
+    border: 1px solid transparent;
+    min-height: 46px;
+    line-height: 1.466;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 25px 11px 15px;
+    word-break: keep-all;
+    border-radius: 4px;
+  }
+  &__wrapper {
+    margin: 0 auto;
+    position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(52, 119, 196, 0.35),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  &__form {
+    max-width: 320px;
+    width: 100%;
+  }
+  &__input{
+    height: 47px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border: 1px solid rgba(27,27,28,.15);
+    padding: 0 15px;
+}
+ &__title {
+  font-size: 20px;
+    line-height: 1.37;
+    font-weight: 700;
+    font-family: "Raleway-Medium";
+    text-align: center;
+    margin: 50px 0 40px;
+ }
+ &__label {
+  color: #1b1b1c;
+ }
+ &__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 322px;
+  margin: 0 auto;
+ }
+ &__bottom {
+  max-width: 320px;
+  width: 100%;
+  height: 46px;
+  color: #ffffff;
+  background: #70c642;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border: none;
+  margin: 22px 0;
+}
+&__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(37, 37, 37, 0.742);
+  font-family: "Raleway-Light";
+  padding-bottom: 30px;
+}
+&__text__link {
+  color: rgba(37, 37, 37, 0.742);
+  cursor: pointer;
+}
 }
