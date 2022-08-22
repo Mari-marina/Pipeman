@@ -1398,6 +1398,20 @@ label {
 #start {
   border: 1px solid rgba(27, 27, 28, 0.15); }
 
+.inframe-modal {
+  border-radius: 2% 0 0 2%;
+  -webkit-border-radius: 2% 0 0 2%;
+  -moz-border-radius: 2% 0 0 2%;
+  -ms-border-radius: 2% 0 0 2%;
+  -o-border-radius: 2% 0 0 2%; }
+  @media all and (max-width: 656px) {
+    .inframe-modal {
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
