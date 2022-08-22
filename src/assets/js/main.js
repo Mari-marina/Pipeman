@@ -71,3 +71,19 @@ window.addEventListener("click", function (event) {
     modalForm.style.display = "none";
   }
 });
+
+let openModalBtn5 = document.getElementById("modalOpen5");
+let modalFormSecond = document.querySelector(".modal-form_second");
+let closeModalBtn5 = document.querySelector(".close-btn5");
+
+openModalBtn5.addEventListener("click", function () {
+  modalFormSecond.style.display = "flex";
+});
+closeModalBtn5.addEventListener("click", function () {
+  modalFormSecond.style.display = "none";
+});
+window.addEventListener("click", function (event) {
+  if (event.target === modalFormSecond) {
+    modalFormSecond.style.display = "none";
+  }
+});
