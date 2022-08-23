@@ -5,6 +5,7 @@
 .modal-form_second,
 .modal-form_delivery {
   background: rgba(14, 7, 7, 0.8);
+  overflow-y: scroll;
   display: none;
   justify-content: center;
   perspective: 500px;
@@ -38,6 +39,9 @@
   }
   &__text {
     margin-bottom: 10px;
+    @media all and (max-width: 840px) {
+      margin-bottom: 6px;
+    }
   }
   &__map {
     max-width: 400px;
@@ -129,10 +133,10 @@
   &__img {
     max-width: 400px;
     width: 100%;
-    object-fit: cover;
-    // @media all and (max-width: 840px) {
-    //   display: none;
-    // }
+    // object-fit: cover;
+    @media all and (max-width: 840px) {
+      display: none;
+    }
   }
   &__wrapper,
   &__wrapper_second {
@@ -188,6 +192,9 @@
   @media all and (max-width: 840px) {
     margin: 30px 0 20px;
   }
+  @media all and (max-width: 400px) {
+    margin: 10px 0 10px;
+  }
  }
  &__label {
   color: #1b1b1c;
@@ -219,6 +226,9 @@
   color: rgba(37, 37, 37, 0.742);
   font-family: "Raleway-Light";
   padding-bottom: 30px;
+  @media all and (max-width: 840px) {
+    padding-bottom: 10px;
+  }
 }
 &__text__link {
   color: rgba(37, 37, 37, 0.742);
@@ -250,9 +260,9 @@
     align-items: center;
   }
 }
-&__img-deliv {
-  max-width: 445px;
-}
+// &__img-deliv {
+//   max-width: 445px;
+// }
 }
 
 .modal-form_second-input {
@@ -305,4 +315,10 @@
   -o-border-radius: 0;
 }
     
+}
+
+.modal-form__wrapper_second
+.modal-form__wrapper,
+.modal-header__form {
+  overflow-y: auto;
 }
